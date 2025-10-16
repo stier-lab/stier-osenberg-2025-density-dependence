@@ -196,7 +196,6 @@ To install all required packages, run:
 source("code/0_libraries.R")
 ```
 
-**Note**: The pipeline no longer requires Chrome/Chromium. Tables are saved as HTML instead of PNG for maximum compatibility.
 
 ---
 
