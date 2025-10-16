@@ -46,8 +46,8 @@ archive/        # Archived old sensitivity analysis files and deprecated code
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/[your-username]/density_dependence_reef_fish_stier_osenberg.git
-cd density_dependence_reef_fish_stier_osenberg
+git clone https://github.com/[your-username]/stier-osenberg-2025-density-dependence.git
+cd stier-osenberg-2025-density-dependence
 ```
 
 2. Open R or RStudio and run:
