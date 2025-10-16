@@ -46,8 +46,9 @@ archive/        # Archived old sensitivity analysis files and deprecated code
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/[your-username]/stier-osenberg-2025-density-dependence.git
+git clone https://github.com/stier-lab/stier-osenberg-2025-density-dependence.git
 cd stier-osenberg-2025-density-dependence
+R -q -e 'source("code/00_run_all.R")'
 ```
 
 2. Open R or RStudio and run:
