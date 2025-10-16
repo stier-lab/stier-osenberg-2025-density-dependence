@@ -1,0 +1,42 @@
+# README: manual_densities.csv
+
+## Title
+Manually extracted mean densities for reef fish substudies used in density-dependence meta-analysis
+
+## Authors
+- Adrian C. Stier (University of California, Santa Barbara; ORCID: 0000-0002-4704-4145; astier@ucsb.edu)
+- Craig W. Osenberg (University of Georgia; ORCID: 0000-0003-1918-7904; osenberg@uga.edu)
+
+## Description
+This file provides manually extracted mean densities for a subset of reef fish studies included in the meta-analysis of density-dependent mortality. These values were not available in original raw datasets and were instead digitized or estimated directly from published figures or tables. The data are used to calculate or validate density-related covariates in synthesis modeling.
+
+## File Format
+- File: manual_densities.csv
+- Format: CSV (comma-separated values), UTF-8 encoding
+
+## Column Descriptions
+- study_num: Integer identifier for the broader study
+- substudy_num: Integer identifier for a unique treatment or replicate group within a study
+- mean_density: Estimated or digitized mean density of focal fish species (individuals per m²)
+
+## Temporal and Spatial Coverage
+- Temporal range: Studies published between ~1990 and 2020
+- Spatial extent: Primarily tropical and subtropical marine systems (exact sites match those in combined_results_2024-09-17.csv)
+
+## Usage
+- Used in modeling and visualizations to supplement missing covariate data
+- Linked by substudy_num to other synthesis files (e.g., covariates-2024-09-30.csv and combined_results_2024-09-17.csv)
+
+## Related Files and Scripts
+- Main synthesis dataset: combined_results_2024-09-17.csv
+- Covariate modeling input: covariates-2024-09-30.csv
+- R scripts: 2_beta_estimate.R, 5_model_selection_comparison.R
+- Workflow: 00_run_all.R
+
+## Funding
+- National Science Foundation (NSF) Grant OCE-1851510 (Stier & Osenberg)
+
+## Notes
+- Mean densities were manually validated against study metadata
+- Use only for supplemental analyses requiring coarse estimates of density
+- For questions or sourcing details, contact Adrian C. Stier (astier@ucsb.edu)

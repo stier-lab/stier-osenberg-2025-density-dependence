@@ -1,0 +1,50 @@
+# README: 1.newick.tre
+
+## Title
+Seed plant phylogeny for reef fish analysis, derived from Dryad dataset doi:10.5061/dryad.fc71cp4
+
+## Source Publication & Dataset
+- **Dataset**: Dryad Digital Repository. 10.5061/dryad.fc71cp4  
+- **Original study**: Smith, S.A. & Brown, J.W. (2018). Constructing a broadly inclusive seed plant phylogeny. *Nature* 554: 518–522.
+
+## Authors
+- Smith, S.A.  
+- Brown, J.W.  
+Derived and pruned by:  
+- Adrian C. Stier (UCSB; ORCID 0000‑0002‑4704‑4145)  
+- Craig W. Osenberg (UGA; ORCID 0000‑0003‑1918‑7904)
+
+## Date of Access & Processing
+- Original dataset accessed: July 9, 2025  
+- File generated: July 9, 2025, by trimming the tree to include reef-fish species used in our study.
+
+## File Format
+- File: 1.newick.tre  
+- Format: Newick (UTF-8 encoded, single-line tree)  
+- Contains: tip names (OTUs) matching species in combined_results_2024-09-17.csv
+
+## Provenance and Modifications
+- Source tree imported from Dryad dataset doi:10.5061/dryad.fc71cp4  
+- Pruned to include only species present in our empirical synthesis  
+- No modification to branch lengths, node labels, or topology  
+- Rooting status preserved from the original dataset
+
+## Usage in Current Study
+- Incorporated into 3_phylogenetic_analysis.R  
+- Used to calculate phylogenetic signal and incorporate evolutionary history in modeling β (density dependence)
+
+## Related Files
+- Species parameter estimates: combined_results_2024-09-17.csv  
+- Script for tree operations: 3_phylogenetic_analysis.R  
+- Workflow pipeline: 00_run_all.R
+
+## Funding & Data Citation
+- Funding: NSF OCE‑1851510 (Stier & Osenberg)  
+- Please cite:
+  - Smith & Brown (2018), Nature 554:518–522  
+  - Dryad dataset doi:10.5061/dryad.fc71cp4  
+  - Open Tree of Life (if applicable)
+
+## Notes
+- This file should be used in conjunction with the metadata and data files in our Dryad archive  
+- For questions or to verify species mapping, contact Adrian C. Stier (astier@ucsb.edu)

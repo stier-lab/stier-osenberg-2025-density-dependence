@@ -1,0 +1,6 @@
+{
+  "git_sha": "83f2a74",
+  "r_version": "R version 4.5.1 (2025-06-13)",
+  "seed": 20251014,
+  "produced": ["bivar_density_duration_maxlen.pdf", "bivar_density_duration_maxlen.png", "bivar_density_vs_beta.png", "bivar_duration_vs_beta.png", "bivar_exptobs_vs_beta.png", "bivar_maxlen_vs_beta.png", "bivar_sizestart_vs_beta.png", "body_size_by_species.png", "duration_by_species.png", "Fig_D1_ALL.pdf", "Fig_D1_ALL.png", "Fig_D1A_LOO_asinh.png", "Fig_D1A_LOO.png", "Fig_D1B_Funnel_asinh.pdf", "Fig_D1B_Funnel_asinh.png", "Fig_D1B_Funnel.pdf", "Fig_D1B_Funnel.png", "Fig_D1C_Egger.png", "Fig_D1D_Models.png", "Fig4_paired_vs_unpaired.png", "figure1_orchard_bh_plot.pdf", "Figure3_species_by_family_order_beta_clean.png", "Figure3_species_by_family_order_beta_darjeeling9.png", "meta_analysis_table.csv", "paired_exp_obs_by_species.pdf", "paired_exp_obs_by_species.png", "phylo_beta_circular.png", "predators_vs_beta_boxplot.png", "species_specific_effects.png"]
+}

@@ -1,0 +1,55 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww22160\viewh21380\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 # README: schmitt_holbrook_2007.csv\
+\
+## Title\
+Mortality estimates and experimental metadata from Schmitt & Holbrook (2007) reef fish study\
+\
+## Authors\
+- Adrian Stier (University of California, Santa Barbara; astier@ucsb.edu; ORCID: 0000-0000-0000-0000)\
+- Craig W. Osenberg (University of Georgia; osenberg@uga.edu; ORCID: 0000-0003-1918-7904)\
+\
+## Abstract\
+This dataset contains site-level estimates of per-capita mortality rates and associated experimental metadata from Schmitt & Holbrook (2007), which investigated spatial variation in juvenile reef fish mortality across replicated sites. The data were extracted from published tables and connecting with the authors to be used in a broader meta-analysis of density-dependent mortality across marine fish populations.\
+\
+## Keywords\
+reef fish, mortality, experimental ecology, Schmitt 2007, per capita mortality, coral reef, density dependence\
+\
+## Methods\
+The original study estimated mortality rates of juvenile reef fish at multiple reef sites in Moorea, French Polynesia. Each record includes a unique substudy number, site number, mean per-capita mortality per day (`mean_perm2`), its associated standard error (`se_perm2`), duration of the experiment in days, and average length of fish at the beginning of the trial. These values were extracted from published tables and used as inputs to fit nonlinear models in the larger meta-analysis.\
+\
+## Temporal and Spatial Coverage\
+- Temporal range: 2006\'962007\
+- Spatial extent: Moorea, French Polynesia (multiple lagoon reef sites)\
+\
+## License\
+CC0 1.0 Universal (public domain dedication)\
+\
+## File Description\
+\
+| Column Name     | Description                                                        | Units              |\
+|------------------|--------------------------------------------------------------------|--------------------|\
+| substudy_num     | Unique identifier for each site/treatment                         | unitless (integer) |\
+| site             | Site number within the original study                            	 | unitless (integer) |\
+| mean_perm2       | Mean per-capita mortality rate per day                           | 1/day              |\
+| se_perm2         | Standard error of the per-capita mortality estimate             | 1/day              |\
+| duration         | Duration of the experiment at each site                           	  | days               |\
+| length_mm        | Mean length of individuals at start of experiment               | mm                 |\
+\
+## Related Files and Scripts\
+- Used in `2_beta_estimate.R` to convert mortality rates to \uc0\u945  values for synthesis\
+- Included in `all_dat2` and final synthesis: `combined_results_2024-09-17.csv`\
+- Final analysis repository: [insert GitHub or Zenodo DOI]\
+\
+## Funding\
+- NSF OCE-1851510 (Stier and Osenberg)\
+- Additional support acknowledged in the manuscript\
+\
+## Notes\
+- Mortality was originally measured directly; density was not manipulated in this study\
+- Data are included in the synthesis manuscript: \'93Widespread heterogeneity in density-dependent mortality of nearshore fishes\'94 (Stier & Osenberg, in review)}

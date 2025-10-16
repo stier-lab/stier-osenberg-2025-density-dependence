@@ -1,0 +1,49 @@
+# README: unique_species_studies.xlsx
+
+## Title
+Species-level life-history traits for reef fish substudies used in density-dependent mortality synthesis
+
+## Authors
+- Adrian C. Stier (University of California, Santa Barbara; ORCID: 0000-0002-4704-4145; astier@ucsb.edu)
+- Craig W. Osenberg (University of Georgia; ORCID: 0000-0003-1918-7904; osenberg@uga.edu)
+
+## Description
+This file contains life-history trait data for reef fish species associated with individual substudies included in a meta-analysis of density-dependent mortality. Each row links a fish species to a unique substudy and provides body size metrics useful for trait-based synthesis and meta-regression.
+
+## File Format
+- File: unique_species_studies.xlsx
+- Format: Excel (.xlsx), UTF-8 encoding
+- Sheet name: unique_species_studies
+
+## Column Descriptions
+- g_sp: Genus_species name of reef fish [text]
+- study_num: Integer ID of source study [unitless]
+- substudy_num: Integer ID for each unique treatment or time series [unitless]
+- max_len (cm): Maximum reported length for species [centimeters]
+- Max_wt (ga): Maximum reported body weight for species [grams]
+
+## Temporal and Spatial Coverage
+- Temporal range: Substudies span 1990–2021
+- Spatial extent: Global coral reef systems; see associated manuscript and `combined_results_2024-09-17.csv`
+
+## Usage
+- Used to examine trait-based predictors of density dependence (β) in fish mortality
+- Joined by `substudy_num` to synthesis files like `combined_results_2024-09-17.csv` and `covariates-2024-09-30.csv`
+- Used in scripts such as `5_model_selection_comparison.R` for regression analysis and model selection
+
+## Related Files and Scripts
+- Trait-based modeling code: `5_model_selection_comparison.R`
+- Mortality synthesis data: `combined_results_2024-09-17.csv`
+- Covariates dataset: `covariates-2024-09-30.csv`
+- Workflow: `00_run_all.R`
+
+## Funding
+- National Science Foundation (NSF) Grant OCE-1851510 (Stier & Osenberg)
+
+## Citation
+Please cite the associated manuscript (Stier et al., in review) when using this dataset.
+
+## Notes
+- Trait data were sourced from FishBase and primary literature.
+- Matching was done based on species identity and substudy references.
+- For further details or sourcing of trait values, contact Adrian Stier (astier@ucsb.edu).

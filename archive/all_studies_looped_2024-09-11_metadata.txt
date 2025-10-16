@@ -1,0 +1,51 @@
+# README: all_studies_looped-2024-09-11.csv
+
+## Title
+Raw mortality and density data from published studies used to estimate density-independent and density-dependent mortality in reef fishes
+
+## Authors
+- Adrian C. Stier (University of California, Santa Barbara; astier@ucsb.edu; ORCID: 0000-0002-4704-4145)
+- Craig W. Osenberg (University of Georgia; osenberg@uga.edu; ORCID: 0000-0003-1918-7904)
+
+## Abstract
+This dataset contains raw values of initial density, final density, time, and experimental design details extracted from published literature on reef fish populations. These data form the empirical basis for nonlinear mortality model fitting across substudies and are used to estimate α (density-independent mortality) and β (strength of density dependence). The file includes metadata annotations and identifiers for tracking original sources and substudies. It is foundational to our synthesis in "Widesp...
+
+## Keywords
+reef fish, mortality, raw data, density dependence, alpha, beta, nonlinear regression, meta-analysis
+
+## Temporal and Spatial Coverage
+- Temporal range: 1990–2021
+- Spatial extent: Global tropical and subtropical reef systems
+
+## License
+CC0 1.0 Universal (public domain dedication)
+
+## File Description (column descriptions)
+
+A - study_num: Study-level identifier grouping related substudies [integer]  
+B - substudy_num: Unique identifier for each experimental unit or extracted panel [integer]  
+C - genus_species: Genus and species name of the focal fish taxon [text]  
+D - n0_m2: Initial fish density at the start of the time interval (individuals per m²) [individuals/m²]  
+E - nt_m2: Final fish density at the end of the interval (individuals per m²) [individuals/m²]  
+F - t: Duration of the observation interval [days]  
+G - Area/Plotna(m2): Area of the plot used in the study [m²]  
+H - No.naPlots/point: Number of replicate plots or samples per time point [unitless]  
+I - Othernafactornaadjustment: Correction or adjustment factor applied to densities [unitless]  
+J - pdf num-Alex: Internal index or reference number for the source PDF [integer or "na"]  
+K - Notes: Notes about data context, limitations, or exclusion rationale [text]
+
+## Related Files and Scripts
+- Mortality model fitting: 2_beta_estimate.R
+- Covariate metadata: covariates-2024-09-30.csv
+- Final parameter estimates: combined_results_2024-09-17.csv
+- Reproducibility pipeline: 00_run_all.R
+- Associated manuscript: “Widespread heterogeneity in density-dependent mortality of nearshore fishes” (Stier & Osenberg, in review)
+
+## Funding
+- National Science Foundation (NSF) Grant OCE-1851510
+
+## Notes
+- This file represents the rawest form of mortality-density data used in our synthesis.
+- Substudies with missing values or noted as "CUMULATIVE" in the Notes column were excluded from model fitting.
+- Use substudy_num to link this file to metadata and model outputs in other files.
+- For reproducibility and transparency, we retained partial or problematic entries with annotation in the Notes column.

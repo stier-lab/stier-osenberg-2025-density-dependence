@@ -1,0 +1,2 @@
+n_pairs,predators_coef_asinh,predators_se_asinh,predators_t,predators_df,predators_p,beta_absent_hat,beta_absent_ci_lo,beta_absent_ci_hi,beta_present_hat,beta_present_ci_lo,beta_present_ci_hi,percent_change_present,LRT_within_pairs,LRT_p
+8,2.7874631655158413,0.8521930508426977,3.2709292369369085,14,0.005575636688547305,12.834622455430798,-0.8158143176861942,696.06112367489,208.74596647889368,4.254629091144867,10104.204137181383,1526.428570094523,7.878450333643457,0.005002733057316838

@@ -1,0 +1,54 @@
+# README: actinopt_12k_treePL.tre
+
+## Title
+Time-calibrated phylogeny of Actinopterygii (ray-finned fishes) derived from Smith & Brown (2018) dataset (Dryad doi:10.5061/dryad.fc71cp4)
+
+## Source Publication & Dataset
+- **Dataset**: Dryad Digital Repository. doi:10.5061/dryad.fc71cp4  
+- **Original study**: Smith, S.A. & Brown, J.W. (2018). Constructing a broadly inclusive seed plant phylogeny. *Nature*, 554: 518–522.
+
+> Note: Although originally part of a broader phylogenetic compilation, this tree (`actinopt_12k_treePL.tre`) specifically reflects the Actinopterygii subtree from that repository.
+
+## Authors
+- Smith, S.A.  
+- Brown, J.W.  
+Derived and subsetted by:  
+- Adrian C. Stier (UCSB; ORCID 0000‑0002‑4704‑4145)  
+- Craig W. Osenberg (UGA; ORCID 0000‑0003‑1918‑7904)
+
+## Date of Access & Processing
+- Original Dryad dataset accessed: July 9, 2025  
+- File processed to extract relevant Actinopterygii subtree used in reef fish analysis
+
+## File Format
+- File: `actinopt_12k_treePL.tre`  
+- Format: Newick (UTF-8 encoded)  
+- Type: Chronogram (ultrametric, time-scaled)  
+- Branch lengths: millions of years before present (based on treePL calibration)
+
+## Provenance and Modifications
+- Extracted from the Smith & Brown (2018) Dryad dataset (`phylogeny.tre` with treePL timing)  
+- Pruned and formatted to retain only ray-finned fish clades relevant to our synthesis of reef fish density dependence  
+- Rooting and topology preserved from original file  
+- Tip names may have been matched or aligned with reef fish species in `combined_results_2024-09-17.csv`
+
+## Usage in Current Study
+- Used in `3_phylogenetic_analysis.R` for phylogenetic signal and meta-analytic modeling  
+- Supports time-aware modeling of trait evolution in reef fish density dependence (β estimates)
+
+## Related Files
+- Final parameter estimates: `combined_results_2024-09-17.csv`  
+- Phylogenetic modeling code: `3_phylogenetic_analysis.R`  
+- Workflow pipeline: `00_run_all.R`
+
+## Funding
+- National Science Foundation (NSF) Grant OCE‑1851510
+
+## Citation
+Please cite:
+- Smith, S.A. & Brown, J.W. (2018). *Nature* 554: 518–522  
+- Dryad dataset doi:10.5061/dryad.fc71cp4
+
+## Notes
+- Branch lengths represent divergence times (MYA) from treePL-calibrated ultrametric tree  
+- For reproducibility or re-alignment with other datasets, contact Adrian C. Stier (astier@ucsb.edu)

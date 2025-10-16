@@ -1,0 +1,98 @@
+# README: covariates-2024-09-30.csv
+
+## Title
+Study-level covariates used in a meta-analysis of density-dependent mortality in reef fishes
+
+## Authors
+- Adrian C. Stier (University of California, Santa Barbara; astier@ucsb.edu; ORCID: 0000-0002-4704-4145)
+- Craig W. Osenberg (University of Georgia; osenberg@uga.edu; ORCID: 0000-0003-1918-7904)
+
+## Abstract
+This dataset includes study-level metadata and covariates for each substudy incorporated in a meta-analysis of density-dependent mortality in nearshore marine fishes. It contains ecological traits, experimental design details, and derived variables used as moderators in meta-regression models. The data were compiled from primary literature and used to explain variation in estimated parameters of mortality models.
+
+## Keywords
+meta-analysis, reef fish, covariates, mortality, density dependence, traits, experimental design
+
+## Temporal and Spatial Coverage
+- Temporal range: 1990–2021
+- Spatial extent: Global tropical and subtropical reef systems, including Caribbean, Pacific, Atlantic, Indian Ocean
+
+## License
+CC0 1.0 Universal (public domain dedication)
+
+## File Description (column descriptions)
+
+A - unnamed: Unused or placeholder column; may be a remnant from file export [unitless]  
+B - substudy_num: Unique identifier assigned to each substudy within the meta-analysis [integer]  
+C - substudy_source: Citation figure/table or textual source where data were extracted [text]  
+D - Alex_PAPER_ID: Internal paper ID from earlier coding workflows [integer]  
+E - use_alex_craig: Inclusion flag from manual review (Alex or Craig) [yes/no]  
+F - data.source..or.reason.for.exclusion.: Notes justifying data inclusion or exclusion [text]  
+G - data.on.recruit.on.recruit: Indicates whether the data reflect recruits influencing recruits [yes/no]  
+H - data.on.older.fish.on.older.fish: Indicates whether the data reflect older fish influencing older fish [yes/no]  
+I - Density.areal.units..or.can.be.converted.: Whether densities are in areal units or convertible to them [yes/no]  
+J - Data.set.original..YES.Use.them.or.not.checked..No.use.data.from.another.paper...: Indicates whether original data were used or substituted [yes/no]  
+K - is.the.initial.number..SINGLE..or.CUMULATIVE...: Describes whether the initial number of settlers is point-based or cumulative over time [categorical text]  
+L - Number.of.Aggregrated.taxa.: Number of taxa aggregated in the substudy’s mortality estimate [integer]  
+M - number_of_families: Number of fish families represented in the mortality estimate [integer]  
+N - Is good based on  criteria?: Whether study meets minimum inclusion criteria for modeling [yes/no]  
+O - Fish Depleted or were Replaced?: Whether individuals were removed or replaced during experiment [text]  
+P - estimation_approach: How mortality or β was estimated (e.g., digitized, model fit, raw counts) [text]  
+Q - use_2023: Whether this substudy was included in the 2023 analysis round [yes/no]  
+R - use_2024: Whether this substudy is included in the 2024 analysis round [yes/no]  
+S - Authors: Authors of the source publication [text]  
+T - Article.Title: Full title of the source study [text]  
+U - Source.Title: Name of the journal or book where the source was published [text]  
+V - Abstract: Abstract of the source study [text]  
+W - Times.Cited..WoS.Core: Web of Science Core citation count [integer]  
+X - Times.Cited..All.Databases: Citation count across all databases [integer]  
+Y - Publication.Date: Date of publication [date or text]  
+Z - Publication.Year: Year the study was published [integer]  
+AA - Volume: Volume number of the journal [text or integer]  
+AB - Issue: Issue number of the journal [text or integer]  
+AC - Start.Page: First page of the article [integer]  
+AD - End.Page: Last page of the article [integer]  
+AE - DOI: Digital Object Identifier [text]  
+AF - study_num: Unique identifier for the broader study (can contain multiple substudies) [integer]  
+AG - study: Name or label for the broader study [text]  
+AH - lat_deci: Latitude of the study site in decimal degrees [decimal degrees]  
+AI - long_deci: Longitude of the study site in decimal degrees [decimal degrees]  
+AJ - journal: Journal name [text]  
+AK - why_not_old: Notes on whether older mortality estimates were excluded or updated [text]  
+AL - use_2002: Whether included in 2002 version of analysis [yes/no]  
+AM - paired_pred: Indicates presence of paired predator treatments [yes/no]  
+AN - paired_substudy_num: Substudy number of the paired treatment [integer]  
+AO - conclusion: Summary of the study’s interpretation or conclusions about density dependence [text]  
+AP - rawdata_for_analysis: Whether raw mortality-density data were used [yes/no]  
+AQ - alpha_2002: Intercept (α) estimate from 2002 analysis [per capita mortality rate]  
+AR - alpha_se_2002: Standard error of α [per capita mortality rate]  
+AS - beta_2002: Slope (β) estimate from 2002 analysis (strength of density dependence) [mortality × density⁻¹]  
+AT - beta_se_2002: Standard error of β [mortality × density⁻¹]  
+AU - var_alpha_2002: Variance of α [rate²]  
+AV - var_beta_2002: Variance of β [rate² × density⁻²]  
+AW - expt_obs: Design type — experimental or observational [categorical text]  
+AX - expt_obs_pairs: Design type for paired predator substudies [categorical text]  
+AY - family: Taxonomic family of focal species [text]  
+AZ - g_sp: Genus and species of focal fish [text]  
+BA - trophic_status: Feeding guild (e.g., herbivore, planktivore, carnivore) [text]  
+BB - trophic_level: Continuous trophic level estimate (FishBase) [unitless]  
+BC - habitat: Habitat type (e.g., coral reef, seagrass, mangrove) [text]  
+BD - geog_region_2: Geographic region (e.g., Caribbean, Indo-Pacific) [text]  
+BE - ocean: Ocean basin (e.g., Pacific, Atlantic, Indian) [text]  
+BF - predators: Whether predators were present in the study design [present/absent]
+
+
+## Related Files and Scripts
+- Primary synthesis dataset: combined_results_2024-09-17.csv
+- Mortality estimation R script: 2_beta_estimate.R
+- Covariate modeling and meta-regression: 5_model_selection_comparison.R
+- Full analysis pipeline: see 00_run_all.R for reproducibility
+- Associated manuscript: “Widespread heterogeneity in density-dependent mortality of nearshore fishes” (Stier & Osenberg, in review)
+
+## Funding
+- National Science Foundation (NSF) Grant OCE-1851510
+
+## Notes
+- Column labels are provided as spreadsheet-style identifiers (e.g., A, B, C...) for clarity
+- Missing values may reflect incomplete metadata or non-applicable fields for certain studies
+- This file is intended to support reproducible synthesis modeling and may be updated to match revisions to associated manuscripts

@@ -1,0 +1,54 @@
+# README: [your_filename.csv]
+
+## Title
+Raw mortality and density measurements extracted from [Title of Paper] (PNAS 2018)
+
+## Authors
+- Adrian C. Stier (University of California, Santa Barbara; ORCID: 0000-0002-4704-4145; astier@ucsb.edu)
+- Craig W. Osenberg (University of Georgia; ORCID: 0000-0003-1918-7904; osenberg@uga.edu)
+
+## Source Publication
+[Mendez et al.] (PNAS. 2018). “Title from PNAS 2018” doi:10.1073/pnas.1719358115
+
+## Description
+This file contains raw ecological measurements (density, mortality, time, treatment metadata) manually extracted from figures and tables in Mendez et al. (2018). These data were digitized to support modelling of density-dependent mortality in reef fish and included alongside other extracted datasets in our synthesis.
+
+## File Format
+- Format: CSV, comma-separated, UTF-8 encoding  
+- Contains columns representing subtudy ID, initial/final densities, duration, treatment/group labels, and coding flags.
+
+## Column Descriptions
+- `study_id`: Identifier matching source study from PNAS 2018  
+- `treatment`: Treatment group or experimental condition [text]  
+- `n0`: Initial density (individuals per unit area) [individuals/m²]  
+- `nt`: Final density at end of experiment [individuals/m²]  
+- `time_days`: Duration of experiment [days]  
+- `notes`: Extraction notes or data quality flags [text]  
+*(Add additional columns here as appropriate)*
+
+## Temporal and Spatial Coverage
+- **Temporal**: Data collected and published in 2018  
+- **Spatial**: Refer to PNAS article for site locations and ecological context
+
+## Usage
+- Used in `2_beta_estimate.R` to parameterize nonlinear mortality models  
+- Linked to broader dataset via `study_id`  
+- Supports synthesis on density-dependent mortality across reef fishes
+
+## Related Files and Scripts
+- Model estimations: `2_beta_estimate.R`  
+- Covariate metadata: `covariates-2024-09-30.csv`  
+- Parameter synthesis: `combined_results_2024-09-17.csv`  
+- Workflow pipeline: `00_run_all.R`
+
+## Funding
+- National Science Foundation (NSF) Grant OCE-1851510  
+
+## Citation
+Please cite:
+- Mendez et al. (2018). *Proceedings of the National Academy of Sciences*, 115(37), 9127‑9132. DOI: 10.1073/pnas.1719358115
+
+## Notes
+- Data extracted manually from figures using digital tools  
+- All units approximated based on published axis labels  
+- For clarity on extraction protocol, refer to methods in Mendez et al. (2018) or contact the authors  

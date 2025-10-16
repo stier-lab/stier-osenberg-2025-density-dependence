@@ -1,0 +1,79 @@
+================================================================================
+METADATA: range8132024.csv
+================================================================================
+
+Description:
+Parameter search ranges for NLS2 (Nonlinear Least Squares) grid search
+optimization used in script 0a_individual_study_estimates.R to estimate
+Beverton-Holt mortality parameters (alpha and beta) for each substudy.
+
+File created: August 13, 2024
+Last updated: August 13, 2024
+
+================================================================================
+COLUMN DEFINITIONS
+================================================================================
+
+Column Name       Type      Units                Description
+-------------------------------------------------------------------------------
+alpha_min         numeric   cm² fish⁻¹ day⁻¹    Minimum value for alpha
+                                                 parameter search range
+
+alpha_max         numeric   cm² fish⁻¹ day⁻¹    Maximum value for alpha
+                                                 parameter search range
+
+beta_min          numeric   cm² fish⁻¹ day⁻¹    Minimum value for beta (density-
+                                                 dependence) parameter search range
+
+beta_max          numeric   cm² fish⁻¹ day⁻¹    Maximum value for beta (density-
+                                                 dependence) parameter search range
+
+================================================================================
+METHODOLOGICAL DETAILS
+================================================================================
+
+Beverton-Holt Model:
+  mu(n) = alpha + beta * n
+
+  where:
+    mu(n) = instantaneous mortality rate as a function of density n
+    alpha = baseline mortality (intercept)
+    beta  = density-dependent mortality coefficient (slope)
+    n     = fish density (individuals per area)
+
+Grid Search:
+- 1000 x 1000 grid search across alpha and beta ranges
+- Binomial likelihood maximization for parameter estimation
+- Variance estimated via numerical Hessian
+- Results transformed to asinh scale for meta-analysis
+
+Range Determination:
+- Ranges determined by preliminary exploration of individual study data
+- Conservative bounds chosen to ensure global optima are captured
+- Bounds encompass biologically plausible values across all fish species
+- Negative beta values allowed (compensatory density dependence)
+- Positive beta values allowed (depensatory or Allee effects)
+
+================================================================================
+PROVENANCE
+================================================================================
+
+Source: Internally generated calibration file
+Created by: Adrian Stier & Craig Osenberg
+Date: 2024-08-13
+Purpose: Standardize NLS2 optimization across all substudies
+
+Related files:
+- code/0a_individual_study_estimates.R (loads this file on line 63)
+- output/combined_results_2025-10-15.csv (final parameter estimates)
+
+================================================================================
+NOTES
+================================================================================
+
+- Single set of ranges applied to all substudies for consistency
+- Wide ranges ensure convergence across diverse species and study designs
+- NLS2 grid search is computationally expensive (~2-4 hours for all substudies)
+- Smart caching in script 0a prevents redundant recomputation
+
+================================================================================
