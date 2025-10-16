@@ -13,6 +13,12 @@ Craig Osenberg — osenberg@uga.edu
 **Funding**  
 National Science Foundation (NSF) Grant [OCE-1851510](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1851510)
 
+# Density-dependent mortality in reef fishes
+
+[![DOI](https://zenodo.org/badge/1077608568.svg)](https://doi.org/10.5281/zenodo.17371596)
+
+This repository reproduces the analyses for:
+Stier & Osenberg (2025) *Widespread heterogeneity in density-dependent mortality of nearshore fishes*.
 ---
 
 ## Overview
